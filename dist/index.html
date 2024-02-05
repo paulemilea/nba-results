@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/NBA Logo.png" type="image/x-icon" />
+    <title>NBA results</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/script.js" defer></script>
+  </head>
+  <body class="relative w-full h-screen bg-slate-900">
+    <main class="container p-4 mx-auto">
+      <h1 class="text-3xl text-white mb-2.5 text-center">NBA results</h1>
+      <div class="flex flex-col items-center gap-2.5 mb-5">
+        <label for="game-date" class="text-xl text-white text-center"
+          >Choose a date from the options below to view NBA games
+          played/scheduled for that day.
+        </label>
+        <input
+          type="date"
+          name="game-date"
+          id="game-date"
+          class="text-xl bg-slate-400 text-white p-2.5 focus:outline-none"
+        />
+      </div>
+      <div
+        class="games-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-2.5 gap-y-2.5 mb-5"
+      ></div>
+      <footer class="text-white text-center">
+        <p>
+          &copy; 2024 | Created by
+          <a
+            href="https://github.com/paulemilea"
+            target="_blank"
+            class="font-medium"
+            >Paul-Emile ANTOINE</a
+          >
+          with the
+          <a
+            href="https://www.balldontlie.io/home.html#introduction"
+            target="_blank"
+            class="font-medium"
+            >balldontlie API.
+          </a>
+        </p>
+      </footer>
+    </main>
+  </body>
+  <div
+    class="spinner-container hidden absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
+  >
+    <div
+      class="w-20 h-20 border-8 border-slate-400 border-t-slate-900 rounded-full animate-spin"
+    ></div>
+  </div>
+</html>
